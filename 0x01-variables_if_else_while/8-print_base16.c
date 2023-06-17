@@ -8,10 +8,18 @@ int main(void)
 {
 	int n;
 
-	for (n = 0; n <= 15; n++)
+	for (n = 0; n < 16; n++)
 	{
-		putchar(n + '0');
+		if (n < 10)
+		{
+			putchar(n + '0');
+		}
+		else
+		{
+			putchar(n - 10 + 'a');
+		}
 	}
-		putchar('\n');
+	putchar('\n');
+
 	return (0);
 }
