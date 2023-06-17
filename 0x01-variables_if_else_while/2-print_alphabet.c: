@@ -1,0 +1,18 @@
+ilphabet.c:13:7: error: ‘i’ undeclared (first use in this function)
+   13 |  for (i = a; i <= 'z'; i++)
+      |       ^
+2-print_alphabet.c:13:7: note: each undeclared identifier is reported only once for each function it appears in
+2-print_alphabet.c:10:7: error: variable ‘alp’ set but not used [-Werror=unused-but-set-variable]
+   1ilphabet.c:16:15: error: expected ‘;’ before ‘return’
+   16 |  putchar('\n')
+      |               ^
+      |               ;
+   17 | 
+   18 |  return (0);
+      |  ~~~~~~        
+2-print_alphabet.c:19:1: error: control reaches end of non-void function [-Werror=return-type]
+   19 | }
+      | ^
+cc1: all warnings being treated as errors0 |  char alp[26] = "abcdefghijklmnopqrstuvwxyz";
+      |       ^~~
+cc1: all warnings being treated as errors
