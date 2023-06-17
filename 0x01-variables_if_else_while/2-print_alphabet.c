@@ -8,11 +8,12 @@
 int main(void)
 {
 	char alp[26] = "abcdefghijklmnopqrstuvwxyz";
-	int i;
 	char a = 'a';
 
-	for (i = a; i < 'z'; i++)
+	for (i = a; i <= 'z'; i++)
+	{
 		printf("%c ", i);
+	}
 	{
 		putchar(alp[i]);
 	}
