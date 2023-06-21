@@ -6,25 +6,23 @@
  */
 int main(void)
 {
-	int i, j, k, sum;
+	int i = 0;
+	long j = 1, k = 2;
 
-	j = 1;
-
-	k = 2;
-
-	for (i = 1; i <= 50; ++i)
+	while (i < 50)
 	{
-		if (j != 20365011074)
-		{
-			printf("%1d, ", j);
-		}
+		if (i == 0)
+			printf("%ld", j);
+		else if (i == 1)
+			printf(", %ld", k);
 		else
 		{
-			printf("%1d\n", j);
+			k += j;
+			j = k - j;
+			printf(", %ld", k);
 		}
-		sum = j + k;
-		j = k;
-		k = sum;
+		++i;
 	}
+	printf("\n");
 	return (0);
 }
