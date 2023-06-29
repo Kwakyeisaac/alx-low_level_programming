@@ -1,8 +1,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 /**
- * main - program that program prints a[2] = 98,
- * Return: Always 0 (Success)
+ * main - print a character
+ * Return: void
  */
 int main(void)
 {
