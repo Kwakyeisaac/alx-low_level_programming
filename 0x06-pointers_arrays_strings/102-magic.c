@@ -2,8 +2,6 @@
 #include <stdlib.h>
 /**
  * main - program that program prints a[2] = 98,
- * followd by anew line
- *
  * Return: Always 0 (Success)
  */
 int main(void)
